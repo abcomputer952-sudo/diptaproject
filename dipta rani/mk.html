@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Search Example</title>
+</head>
+<body>
+  <h2>Search Example</h2>
+
+  <input type="text" id="searchInput" placeholder="Type a name...">
+  <button onclick="search()">Search</button>
+
+  <p id="result"></p>
+
+  <script>
+    const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+    function search() {
+      const input = document.getElementById("searchInput").value.trim();
+      const result = document.getElementById("result");
+
+      // Check if the name exists (case-insensitive)
+      const found = names.find(name => name.toLowerCase() === input.toLowerCase());
+
+      if (found) {
+        result.textContent = `${found} was found! ✅`;
+      } else {
+        result.textContent = `No match found. ❌`;
+      }
+    }
+  </script>
+</body>
+</html>

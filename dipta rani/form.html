@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(60deg, black, rgb(4, 4, 70));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            height: 45%;
+            width: 23%;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+
+            padding: 35px 15px 15px 15px;
+        }
+
+        input {
+
+            border-radius: 5px;
+            border: none;
+            width: 83%;
+            padding: 12px;
+            margin-top: 8px;
+
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            width: 90%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: rgb(168, 0, 0);
+            color: white;
+            font-weight: bold;
+            transition: 1s all ease-in-out;
+        }
+
+        button:hover {
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <form action="">
+
+
+            <input type="text" placeholder="Username" id="username">
+
+            <span id="user-error"></span>
+
+            <input type="password" placeholder="Password" id="password">
+            <span id="pass-error"></span>
+
+
+            <input type="password" placeholder="Confirm Password" id="confirmpassword">
+            <span id="con-error"></span>
+
+
+            <input type="number" name="" id="number" placeholder="number">
+            <span id="num-error"></span>
+
+
+
+            <button id="btn">Sing up</button>
+
+
+
+
+
+            <script src="script.js"></script>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

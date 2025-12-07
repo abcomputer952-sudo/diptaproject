@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contaainer {
+            height: 120px;
+            width: 130px;
+            background-color: pink;
+            border: 2px;
+            margin: 20px;
+            display: none;
+            padding: 30px;
+            animation: pik 0.5s ease-in-out;
+
+
+
+        }
+
+        @keyframes pik {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: translateY(1);
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <form action="">
+        <input type="text" name="" id="username">
+        <input type="number" name="" id="age">
+        <input type="text" name="" id="address">
+        <button onclick="create(event)">Send</button>
+
+
+
+    </form>
+
+    <div class="contaainer" id="container">
+        <div class="paper">
+            <p id="nameResult"></p>
+            <p id="ageResult"></p>
+            <p id="addressResult"></p>
+
+        </div>
+    </div>
+
+
+    <script>
+        function create(event) {
+            event.preventDefault()
+            const username = document.getElementById("username").value;
+            const age = document.getElementById("age").value;
+            const address = document.getElementById("address").value;
+            const nameResult = document.getElementById("nameResult");
+            const ageResult = document.getElementById("ageResult");
+            const addressResult = document.getElementById("addressResult");
+            const container = document.getElementById("container");
+
+
+            nameResult.innerHTML = username;
+            ageResult.innerHTML = age;
+            addressResult.innerHTML = address;
+            container.style.display = "block";  
+
+        }
+
+    </script>
+</body>
+
+</html>

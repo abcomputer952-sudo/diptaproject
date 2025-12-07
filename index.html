@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            height: 70vh;
+            width: 100%;
+
+
+        }
+
+        .contant {
+            height: 70vh;
+            width: 100%;
+            background-color: rgb(6, 88, 88);
+            display: flex;
+
+        }
+
+        #contanta {
+            height: 50vh;
+            width: 40%;
+            padding-left: 100px;
+            padding-top: 100px;
+
+
+
+
+        }
+
+        h1 {
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: love1 1s ease-in-out;
+
+
+        }
+
+        .prap1 {
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: love1 1s ease-in-out;
+
+        }
+
+        @keyframes love1 {
+            from {
+                transform: translatex(0px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translatex(100px);
+                opacity: 1;
+            }
+        }
+
+        #button345 {
+            color: white;
+            background-color: rgb(6, 65, 65);
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            animation: love1 1s ease-in-out;
+            border-radius: 10px;
+        }
+
+        #button345:hover {
+            background-color: rgb(25, 167, 96);
+            transition: all 1.5s ease-in-out;
+        }
+
+        .contant2 {
+            height: 30vh;
+            width: 100%;
+            background-color: white;
+        }
+
+        header {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(6, 88, 88);
+            list-style: none;
+            justify-content: space-between;
+            text-align: center;
+
+        }
+
+        #dipta1 {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            color: rgb(250, 245, 245);
+            font-weight: bold;
+            align-items: center;
+
+        }
+
+        #dipta1 li {
+            color: rgb(255, 255, 255);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        #dipta1 li::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: brown;
+            height: 3px;
+            top: 20px;
+            left: 0;
+            display: none;
+
+        }
+
+        #dipta1 li:hover::after {
+            display: block;
+            
+        }
+
+
+        h2 {
+            color: rgb(243, 239, 239);
+            font-weight: bold;
+            animation: love 1s ease-in-out;
+
+        }
+
+        .containers {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+
+
+
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(5, 70, 70);
+            margin-top: -350px;
+            text-align: center;
+            align-content: center;
+            animation: love 1s ease-in-out;
+
+        }
+
+        #icon {
+            font-size: 20px;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
+        }
+
+        h3 {
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .image {
+            height: 50%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            animation: love3 1s ease-in-out;
+
+        }
+
+        @keyframes love3 {
+            from {
+                transform: translatex(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translatex(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes love {
+            from {
+                transform: translatey(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translatey(0px);
+                opacity: 1;
+            }
+        }
+
+
+        footer {
+
+            height: 200px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            display: flex;
+
+
+
+
+        }
+
+        @keyframes love123 {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        .dipta {
+            height: 100px;
+            width: 30%;
+            margin-left: 100px;
+            list-style: none;
+            animation: love123 1s ease-in-out;
+
+
+
+        }
+
+        h4 {
+            padding: 10px;
+            animation: love123 1s ease-in-out;
+        }
+
+        .input1 {
+            height: 100px;
+            width: 40%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: love123 1s ease-in-out;
+
+
+        }
+
+        .input2 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: love123 1s ease-in-out;
+
+
+
+        }
+
+        .input9 {
+            color: rgb(0, 0, 0);
+            animation: love123 1s all ease-in-out;
+        }
+
+        .button64 {
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(85, 228, 238);
+            margin-top: 10px;
+
+
+        }
+
+        .button64:hover {
+            background-color: rgb(25, 91, 167);
+
+
+
+        }
+
+        .fbf {
+            margin-top: 20px;
+        }
+
+        .newsform {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Impact</h2>
+        
+        <ul id="dipta1">
+            <li>Home</li>
+            <li>About</li>
+            <li>Servies</li>
+            <li>Portfolio</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Dropdown</li>
+            <li>Contact</li>
+        </ul>
+
+
+    </header>
+    <div class="container">
+        <div class="contant">
+            <div id="contanta">
+                <h1>Welcome to impact</h1>
+                <p class="prap1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed in voluptatem, ea odit,
+                    architecto
+                    inventore cupiditate consequuntur tempora voluptatum accusamus unde non fugiat repellat expedita
+                    dolorum modi iste maiores nostrum.</p>
+                <button id="button345">get started</button>
+            </div>
+            <div class="image">
+                <img src="sinchan.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="containers">
+        <div class="box1"><i class="fa-solid fa-tv" id="icon"></i>
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="box1"><i class="fa-brands fa-facebook" id="icon"></i></i>
+            <h3>Sed ut Perspiciatis</h3>
+        </div>
+        <div class="box1"><i class="fa-regular fa-location-dot" id="icon"></i>
+            <h3>Magni Dolores</h3>
+        </div>
+        <div class="box1"><i class="fa-solid fa-face-smile" id="icon"></i>
+            <h3>Nemo Enim</h3>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <ul class="dipta">
+            <h4>USEFUL LINKS</h4>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Shop</li>
+            <li>Blog</li>
+        </ul>
+        <div class="input1">
+            <h4 class="input2"> NEWSLETTER</h4>
+            <input type="text" placeholder="log in" class="newsform"><br>
+            <button class="button64">Love me love me</button>
+        </div>
+        <div class="input2">
+            <h4>CONTACT</h4>
+            <P class="input9">Hi its me dipta lama. welcome to my <br> website if the world
+                was ending
+            </P>
+            <div class="fbf"><i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-alarm-clock"></i>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" id="sr">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <p class="subtitle">What we offer to help your business grow</p>
+
+        <div class="service-container">
+            <div class="service-box">
+                <i class="icon">💡</i>
+                <h3>Creative Design</h3>
+                <p>We craft visually stunning and user-friendly designs to make your brand stand out.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="icon">⚙️</i>
+                <h3>Web Development</h3>
+                <p>From landing pages to web apps — we build fast, responsive, and secure websites.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="icon">📈</i>
+                <h3>Digital Marketing</h3>
+                <p>Boost your reach and engagement through smart, data-driven marketing strategies.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+
+
+        const sr = document.getElementById("sr");
+
+
+        sr.addEventListener("mouseover",function service() {
+
+            const services = document.getElementById("services");
+
+            if (services.style.display =="none") {
+                services.style.display = "block"
+                
+            }
+            else {
+                services.style.display = "none";
+            }
+
+        }
+    )
+
+
+    </script>
+</body>
+
+</html>
